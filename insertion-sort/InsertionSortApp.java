@@ -3,11 +3,7 @@ public class InsertionSortApp {
     public static void main(String[] args) {
         int[] myArr = {1,2,3,4,6,7,5};
         insertionSort(myArr, 6);
-
-        for (int i : myArr) {
-            System.out.print(i + ",");
-        }
-        System.out.println();
+        display(myArr);
     }
 
     static void insertionSort(int[] arr, int idx){
@@ -23,5 +19,11 @@ public class InsertionSortApp {
         }
     }
 
-
+    static void display(int[] arr) {
+        String temp = "";
+        for (int element : arr) {
+            temp += element + ",";
+        }
+        System.out.println(temp.substring(0, temp.length()-1));
+    }
 }
