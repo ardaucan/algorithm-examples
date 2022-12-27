@@ -68,7 +68,7 @@ public class Q1 {
         int freq[] = { 34, 8, 50 };
         int n = keys.length;
         System.out.println("Cost of Optimal BST is "
-                + optimalSearchTree(keys, freq, n));
+                + optimalSearchTree(keys, freq, n)[0][n - 1].cost);
     }
 
 }
